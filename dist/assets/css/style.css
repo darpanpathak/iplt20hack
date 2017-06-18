@@ -1,0 +1,78 @@
+body {
+    padding-top: 15px;
+}
+
+.navbar-inverse {
+    background-color: #0f183a;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.livematch {
+    padding-top: 15px;
+    background: #0f183a;
+    background-image: url('http://wallpapersin4k.net/wp-content/uploads/2017/01/Gradient-Abstract-Wallpapers-1.jpg');
+    padding: 30px;
+    margin: 10px -20%;
+    background-position-y: 50%;
+}
+
+.livematch .left {
+    text-align: right;
+    padding-top: 1em;
+    color: white;
+}
+
+.livematch .matchwintext {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+.livematch p {
+    margin: 0;
+}
+
+.livematch .right {
+    text-align: left;
+    padding-top: 1em;
+    color: white;
+}
+
+.livematch .center {
+    text-align: center;
+    font-size: 7em;
+    color: white;
+    cursor: pointer;
+}
+
+.livematch .teamname {
+    color: white !important;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1380px;
+    }
+    .borderright {
+        border-right: 1px solid #efefef;
+        padding: 0 25px;
+    }
+}
