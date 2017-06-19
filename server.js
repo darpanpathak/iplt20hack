@@ -11,6 +11,7 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
+
 app.get('/api/matches', function(req, res) {
     var data = fs.readFileSync(path.join(__dirname, '/data/matches.csv'), { encoding: 'utf8' });
     var options = {
@@ -50,6 +51,9 @@ app.get('/api/deliveries/:id/:over/:ball/:inning', function(req, res) {
     res.send(delbyid);
 });
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
 
 
 app.listen(PORT, function(err) {
